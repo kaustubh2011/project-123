@@ -26,5 +26,13 @@ function gotposes(results)
         nosey=results[0].pose.nose.y;
         leftwristx=results[0].pose.leftWrist.x;
         rightwristx=results[0].pose.rightWrist.x;
+          diff=floor(leftwristx-rightwristx);
     }
 }
+function draw()
+{
+background('#800080');
+text('kaustubh',100,150);
+textSize(diff);
+}
+    
